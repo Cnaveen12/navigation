@@ -34,7 +34,7 @@
                         <version>2.14.1</version>
                         <configuration>
                             <includes>
-                                <include>**/InterrogationTestSuite.java</include>
+                                <include>**/InterrogationTestSuite.class</include>
                             </includes>
                         </configuration>
 
