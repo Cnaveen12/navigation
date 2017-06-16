@@ -39,8 +39,8 @@ public class UserInteractions {
         new Actions(driver).keyDown(Keys.CONTROL).sendKeys("B").perform();
         assertThat(driver.findElement(By.cssSelector("div[id='draggable1']")).getText(),is("Bwa! Ha!Ha!"));
     }
-   /* @AfterClass
+    @AfterClass
     public static void closeDriver(){
         driver.close();
-    }*/
+    }
 }
