@@ -19,18 +19,18 @@ public class FramesTest {
         driver = new ChromeDriver();
         driver.navigate().to("http://www.compendiumdev.co.uk/selenium/frames/");
     }
-    @Test
-    public void switchToFrame(){
-        driver.switchTo().frame("content");
-        WebElement link = driver.findElement(By.cssSelector("a[href='green.html']"));
-        link.click();
-        link = driver.findElement(By.cssSelector("a[href='content.html']"));
-        link.click();
-        link = driver.findElement(By.cssSelector("h1"));
-        String header = link.getText();
-        assertThat(header, is("Content"));
-
-    }
+//    @Test
+//    public void switchToFrame(){
+//        driver.switchTo().frame("content");
+//        WebElement link = driver.findElement(By.cssSelector("a[href='green.html']"));
+//        link.click();
+//        link = driver.findElement(By.cssSelector("a[href='content.html']"));
+//        link.click();
+//        link = driver.findElement(By.cssSelector("h1"));
+//        String header = link.getText();
+//        assertThat(header, is("Content"));
+//
+//    }
     @Test
     public void switchToFrameAndIFrame(){
         driver.switchTo().frame("menu");
