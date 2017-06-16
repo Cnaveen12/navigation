@@ -28,6 +28,7 @@ public class OpenABrowser {
         driver.get("http://www.ratatype.com/login/");
 
         driver.findElement(By.cssSelector("#email")).sendKeys("Fazle");
+        driver.close();
 
 
 
